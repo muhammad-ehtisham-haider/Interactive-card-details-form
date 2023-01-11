@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.right{
+    width: 40%;
+    background: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+.left{
+    width: 60%;
+}
+.six{
+    margin-top: 20%;
+    margin-left: 30%;
+    padding: 10px;
+    width: 50%;
+    font-size: 12px;
+}
+
+
+form ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.low{
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    display: flex;
+    width: 50%;
+}
+.y{
+    margin-left: 5%;
+}
+
+input{
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.btn input{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+
+
+
+.card-front{
+    background: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 67%;
+    height: 29%;
+    color: white;
+    margin-left: 40%;
+    border-radius: 0 9px 9px 9px;
+    margin-top: 20%;
+    padding: 20px;
+}
+.up{
+    display: flex;
+    align-items: center;
+}
+.big-circle{
+    font-size: 32px;
+}
+.small-circle{
+    color: rgb(236, 233, 233);
+    margin-left: 10px;
+}
+.mid{
+    width: 100%;
+    margin-top: 55px;
+    font-size: 25px;
+    word-spacing: 5px;
+}
+.down{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    
+    display: flex;
+}
+
+.card-back{
+    background: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67%;
+    height: 29%;
+    color: white;
+    margin-left: 60%;
+    border-radius: 0 9px 9px 9px;
+    margin-top: 10%;
+    padding: 20px;
+}
+#back{
+    margin-top: 21.5%;
+    margin-left: 80%;
+}
+
+
+#conti{
+    margin-top: 15rem;
+    margin-left: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#conti h1{
+    margin-top: 20px;
+}
+#conti p{
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 30px;
+}
+.btn button{
+    width: 100%;
+    padding: 10px 90px;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+
+#nameerror , #noerror, #montherror, #cvcerror , #yearerror{
+    color: red;
+}
+

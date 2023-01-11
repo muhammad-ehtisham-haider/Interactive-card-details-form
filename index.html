@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="right">
+            <div class="card-front">
+                <div class="up">
+                    <div class="big-circle"><i class="fa-solid fa-circle"></i></div>
+                <div class="small-circle"><i class="fa-regular fa-circle"></i></div>
+            </div>
+            <div class="mid">
+                <div id="para"><p>0000 0000 0000 0000</p> </div>
+                <div id="pasteone" style="display: none;"></div>
+            </div>
+            
+            <div class="down">
+                <div id="nam"><p>haider</p></div>
+                <div id="paste" style="display: none;"></div>
+                <div class="date">
+                    <div id="m">00</div>
+                    /
+                    <div id="y">00</div>
+                </div>
+            </div>
+                
+            </div>
+            <div class="card-back">
+                <div id="back"><p>000</p></div>
+            </div>
+
+        </div>
+        <div class="left" >
+            <div class="six" id="show" >
+                <form action=""  name="details" onsubmit="formValidation() ; return false">
+                    <ul>
+                        <li><label for="name"> CARDHOLDER NAME </label></li> <br>
+                        <li><input type="text" name="name" id="nameout" placeholder="e.g. haider" ></li>
+                        <div id="nameerror"></div>
+
+                        <li><label for="cardno">CARD NUMBER</label></li> <br>
+                        <li><input type="text" name="cardno" id="cardout" placeholder="e.g. 1234 3456 2456 0000" ></li>
+                        <div id="noerror"></div>
+
+                        <div class="low">
+                            <div class="one">
+                                <div class="m">
+                                    <li><label for="month">EXP. DATE</label></li>
+                                    <li><input type="number" name="month" id="monthout" placeholder="MM" min="1" max="12"></li>
+                                    <div id="montherror"></div>
+                                </div>
+                                
+                                <div class="y">
+
+                                    <li><label for="year">(MM/YY)</label></li>
+                                    <li><input type="number" name="year" id="yearout" placeholder="YY" min="1" max="32"></li>
+                                    <div id="yearerror"></div>
+                                </div>                              
+                            </div>
+                            <div class="two">
+                                <li><label for="cvc">CVC</label></li>
+                                <li> <input type="text" id="cvout" placeholder="e.g. 123" name="cvc"></li>
+                                <div id="cvcerror"></div>
+                            </div>
+                        </div>
+                        <div class="btn"><input type="submit" id="click" value="Confirm" onclick="copy() ; copyone() ; copytwo() ; copythree() ; copyfour()"></div>
+                         
+                    </ul>
+                </form>
+            </div>
+
+
+            <div id="conti" style="display:none ;">
+                <div class="icon-tick">  <img src="images/icon-complete.svg" alt=""> </div>
+                <h1>THANK YOU!</h1>
+                <p>We've added your card details</p>
+                <div class="btn"><button>Continue</button></div>
+            </div>     
+        </div>
+
+
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
